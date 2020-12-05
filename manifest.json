@@ -5,12 +5,13 @@
   "description": "Adds a few keyboard shortcuts to Mint.com.",
   "homepage_url": "https://github.com/schvenk/mint-keyboard-shortcuts",
   "permissions": [
-    "https://www.mint.com/"
+    "https://www.mint.com/",
+    "https://mint.intuit.com/"
   ],
   "content_scripts": [
     {
       "matches": [
-        "https://wwws.mint.com/transaction.event*"
+        "https://mint.intuit.com/transaction.event*"
       ],
       "js": [
         "src/js/mint-keyboard-shortcuts.js"
