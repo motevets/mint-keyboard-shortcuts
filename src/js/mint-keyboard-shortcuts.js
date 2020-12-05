@@ -16,6 +16,42 @@ var mintKeyboardShortcutsMain = function() {
 		}
 		return false;
 	}
+
+	/*
+	 * Sends a key down event. Returns false, so as not to propogate th old key.
+	 */
+	var remapKey = function(trigger, remapped) {
+		var newKey = "";
+		var newKeyCode = -1;
+		switch(remapped) {
+			case 'ArrowDown':
+				newKey = 'ArrowDown';
+				newKeyCode = 40;
+				break;
+			case 'ArrowUp':
+				newKey = 'ArrowUp';
+				newKeyCode = 38;
+				break;
+			default:
+				console.error("" + remapped + " is unrecognized.")
+		}
+
+		var keyboardEvent = {
+			altKey: false,
+			ctrlKey: false,
+			metaKey: false,
+			shiftKey: false,
+			key: newKey,
+			code: newKey,
+			keyCode: newKeyCode,
+			which: newKeyCode,
+		}
+
+		key(trigger, function() {
+			document.dispatchEvent(new KeyboardEvent('keydown', keyboardEvent));
+			return false;
+		});
+	}
 	
 	/*
 	 * Sets up a shortcut for a single checkbox in Mint's array of
@@ -83,6 +119,10 @@ var mintKeyboardShortcutsMain = function() {
 	// setTagKey('t', 'Tax Related');
 	// setTagKey('b', 'Business');
 	// setTagKey('r', 'Reimbursable');
+
+	setTagKey('w', 'Splitwise');
+	remapKey('j', 'ArrowDown');
+	remapKey('k', 'ArrowUp');
 
 	// To debug loading:
 	console.log("Loaded Mint.com shortcuts.");
