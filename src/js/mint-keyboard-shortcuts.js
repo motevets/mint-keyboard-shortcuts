@@ -1,5 +1,6 @@
-/* Licensed under the MIT License (http://opensource.org/licenses/MIT), though I'm not gonna
- * complain if you want to buy me a beer.
+/* Licensed under the MIT License (http://opensource.org/licenses/MIT)
+ * Copyright (c) 2014 by Christopher Bowns (buy this man a beer)
+ * Copyright (c) 2021 by Tom Dunlap (no beer for me, thanks)
  */
 
 
