@@ -121,6 +121,8 @@ var mintKeyboardShortcutsMain = function() {
 	// setTagKey('r', 'Reimbursable');
 
 	setTagKey('w', 'Splitwise');
+	setTagKey('1', 'Harlan');
+	setTagKey('a', 'Approved');
 	remapKey('j', 'ArrowDown');
 	remapKey('k', 'ArrowUp');
 
