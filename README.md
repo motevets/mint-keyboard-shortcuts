@@ -4,13 +4,15 @@ Mint.com Keyboard Shortcuts
 Mint.com is great in a number of respects, but somewhat lacking in keyboard shortcuts. 
 This user script adds a few simple keyboard shortcuts so you can work with Mint a little faster, in Chrome anyway.
 
-# Installation
+Installation
+---------------------------
 1. Clone this repo.
 2. In Chrome, go to Window > Extensions
 3. Drag the `src/js/mint-keyboard-shortcuts.js` file onto the Chrome window.
 4. The script should now be installed, and will run any time you're on Mint's Transactions screen.
 
-# Usage
+Usage
+---------------------------
 From the Transactions page on mint.com, you can use the following shortcuts.
 
 | Key       | Alternate  | Description                                            |
@@ -24,3 +26,8 @@ From the Transactions page on mint.com, you can use the following shortcuts.
 | `1`       |            | add "Harlan" tag                                       |
 | `A`       |            | add "Approved" tag                                     |
 
+Credits
+---------------------------
+* Original extension by [Christopher Bowns](https://github.com/cbowns)
+* Customization by [Tom Dunlap](https://github.com/motevets)
+* Uses open source library [keymaster](https://github.com/madrobby/keymaster) by [Thomas Fuchs](https://github.com/madrobby)
